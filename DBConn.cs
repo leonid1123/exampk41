@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySqlConnector;
-//сделать правильную обработку ошибок
 namespace WindowsFormsApp1
 {
     internal static class DBConn

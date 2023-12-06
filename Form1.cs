@@ -17,12 +17,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string userName = textBox1.Text.Trim();
             string userPassword = textBox2.Text.Trim();
-
             string sql = "SELECT `pass` FROM `users` WHERE `name`=@par1";
             MySqlCommand cmd = new MySqlCommand(sql,DBConn.Connect());
             cmd.Parameters.AddWithValue("@par1",userName);
@@ -35,8 +33,6 @@ namespace WindowsFormsApp1
             {
                 label3.Text = "такого пользователя нет";
             }
-
-
         }
     }
 }
